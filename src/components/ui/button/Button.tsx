@@ -1,7 +1,7 @@
 import clsx from 'clsx';
-import { LoaderCircle } from '../icons/LoaderCircle';
 
 import styles from './Button.module.css';
+import { LoaderCircle } from '../../icons/LoaderCircle';
 
 interface ButtonProps extends React.ComponentProps<'button'> {
   loading?: boolean;
