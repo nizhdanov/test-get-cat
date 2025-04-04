@@ -1,0 +1,35 @@
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 3px;
+  line-height: 1.25;
+  background: lightblue;
+  text-decoration: none;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  overflow: hidden;
+  width: fit-content;
+
+  &:disabled {
+    background-color: lightcoral;
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  svg {
+    animation: spin 1s linear infinite;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
